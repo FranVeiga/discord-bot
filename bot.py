@@ -1,6 +1,3 @@
-# client id: 758011372301713519
-# client secret: NzU4MDE2MzIzODU4MDcxNjIy.X2oztg.YKoQlS3DGjIzwQxOLiPvhhfTTvM
-
 import discord
 from discord.ext import commands
 import diccionario
