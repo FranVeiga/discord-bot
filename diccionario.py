@@ -28,7 +28,7 @@ def define(language, word):
         ol = soup.find('ol')
         try:
             definition = ol.find('li').text
-            return word.capitalize() + "; " + definition
+            return word.capitalize() + ": " + definition
         
         except AttributeError:
             definition = soup.find('p', id='noEntryFound').text

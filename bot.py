@@ -6,6 +6,7 @@ from discord.ext import commands
 import diccionario
 
 client = commands.Bot(command_prefix='.')
+secret = 'your secret'
 
 @client.event
 async def on_ready():
@@ -24,10 +25,10 @@ async def deff(ctx, word, lang="eng"):
 
 @client.command()
 async def hola(ctx):
-    print('hola')
+    await ctx.send("hola")
 
 
 
-client.run('NzU4MDE2MzIzODU4MDcxNjIy.X2oztg.YKoQlS3DGjIzwQxOLiPvhhfTTvM')
+client.run(secret)
 
 
