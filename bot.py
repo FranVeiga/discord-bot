@@ -14,8 +14,8 @@ async def on_typing(channel, user, when):
     if isinstance(channel, discord.DMChannel):
        await channel.send(content="Que escribís puto")
 
-@client.command()
-async def deff(ctx, word, lang="eng"):
+@client.command(aliases=["def"])
+async def _def(ctx, word, lang="eng"):
     definition = diccionario.define(lang, word)
     await ctx.send(definition)
 
